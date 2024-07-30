@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- 부트스트랩 설정 -->
+	<link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">
+	<!-- CSS 설정 -->
+	<link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+	<title>그래도 남자니깐~</title>
+</head>
+<body>
+	<!-- navbar -->
+	<nav th:replace="~{navbar :: navbarFragment}"></nav>
+
+	<!-- 기본 템플릿 안에 삽입될 내용 -->
+	<th:block layout:fragment="content"></th:block>
+
+<script th:src="@{/bootstrap.min.js}"></script>
+</body>
+</html>

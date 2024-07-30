@@ -1,0 +1,22 @@
+<nav th:fragment="navbarFragment" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+	<div class="container-fluid">
+		<!-- SBB를 클릭하면 메인 페이지로 이동하도록 설정 -->
+		<a class="navbar=brand" href="/">SBB</a>
+		<!-- navbar 메뉴에 버튼을 추가하기 위해 부트스트랩 속성을 활용 -->
+		<buttom class="navbar-toggler" type="buttom" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expands="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</buttom>
+		<!-- 화면 크기에 따라 내비게이션 바의 메뉴 노출을 관리한다. -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<!-- navbar 메뉴 오른쪽, 왼쪽 여백 지정 -->
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#">로그인</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" th:href="@{/user/signup}">회원 가입</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
